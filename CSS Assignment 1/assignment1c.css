@@ -1,0 +1,18 @@
+.red{
+    color: rgb(227, 59, 59);
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+#del{
+    text-decoration: line-through;
+}
+.yellow{
+   background-color: yellow;
+}
+#underline{
+    text-decoration: underline;
+}
