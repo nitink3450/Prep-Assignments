@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    background-image: url(./pexels-james-wheeler-417074.jpg);
+}
+.container_main{
+    border: groove 10px rgb(173, 246, 48);
+    width: 99%;
+    min-height: 100vh;
+}
+.container_1{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;   
+}
+.top_left{
+    background-color: black;
+    color: white;
+    border: 8px solid red;
+    border-radius: 40px;
+    height: 24vh;
+    width: 30%;
+    font-style: italic;
+    text-align: center;
+    padding: 8px;
+}
+.top_middle{
+    background-color: black;
+    color: white;
+    border: solid 8px red;
+    height: 10vh;
+    width:45%;
+    border-radius:50px;
+    text-align: center;
+    font-style: italic;
+    /* position: absolute; */
+    /* top: 40px; */
+    /* left: 300px; */
+     margin:11px 10px 10px -280px ;
+} 
+.top_right{
+    background-color: black;
+    color: white;
+    border: 8px solid red;
+    border-radius: 40px;
+    padding: 8px;
+    height: 24vh;
+    width: 30%;
+    font-style: italic;
+    text-align: center;
+}
+.container_2{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 0px;
+}
+.circle{
+    /* height: 50vh; */
+    /* width: 25vw; */
+    height: 350px;
+    width: 400px;
+    background-color: rgb(27, 164, 132);
+    border: 8px solid gray;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 4%;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 200px;
+
+}
+.line-1{
+    border-bottom : solid white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.line-2{
+    border-bottom : solid white;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+input{
+    text-align: center;
+}
+.form{
+    border: dashed 8px red;
+    color: rgb(235, 143, 143);
+    text-align: center;
+    height: 650px;
+    margin-top: 50px;
+    background-color: white;
+}
+.container_3{
+    display: flex;
+    justify-content:space-evenly;
+}
+.menu{
+    height:10vh;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: solid 8px red;
+    border-radius:50px ;
+    text-align: center;
+    font-style: italic;
+}
+.line-3{
+border-bottom:groove 2px rgb(236, 226, 226);
+}
+.container_4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+   background-color: rgb(44, 254, 254);
+   color: rgb(78, 78, 179); 
+   /* height: 100px;
+   width: 100px; */
+   border: solid 4px green;
+   border-radius: 50px;
+   width: 26%;
+   text-align: center;
+   font-size: x-large;
+}
+.line-4{
+    border-bottom: groove rgb(252, 251, 251);  
+}
