@@ -1,0 +1,135 @@
+body{
+    margin: 8px;
+    background-color: gray;
+}
+.main_container{
+    width: 100%;
+    min-height: 100vh;
+    /* border: solid rgb(0, 0, 0) 2px; */
+}
+.upper_container{
+    display: flex;
+    justify-content: center;
+}
+.box1{
+    background-color: white;
+    color: #b11212;
+    height: 18vh;
+    width: 30%;
+    text-align: center;
+    padding-top: 20px;
+    border: solid #d03030 8px;
+    border-radius: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #d03030;
+    box-shadow: 7px 7px 2px #5d278a;
+}
+.middle_container{
+    border: solid 8px green;
+    min-height: 100vh;
+    width: 99%;;
+}
+.upper_yard{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.box2{
+    height: 50vh;
+    width: 25%;
+    background-color: white;
+    text-align: center;
+    border: 8px solid #d03030;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(122, 13, 245);
+    box-shadow: 7px 7px 2px #5d278a;
+}
+#right{
+    position: relative;
+    right: 80px;
+}
+#left{
+    padding-top: 10px;
+    font-size:42px;
+    font-weight: bold;
+    line-height:80px;
+}
+#left1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align:left ;
+    padding-top: 10px;
+}
+#right1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.right2{
+    font-weight: bold;
+}
+#right0{
+    position: relative;
+    right: 80px;
+}
+#sub{
+    background-color: #d03030;
+    border-radius: 50px;
+}
+.bottom_container{
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    background-color: green;
+    min-height: 80vh;
+    width: 50%;
+    border: solid 8px #5d278a;
+}
+.container1a{
+    display: flex;
+    justify-content: center;
+    height:6vh;
+    /* background-color: #ce2e2e; */
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.container1b{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+}
+.cards{
+    background-color: #cdcd1c;
+    border: 4px solid green;
+    padding-top: 20px;
+    height: 32vh;
+    line-height: 39px;
+}
+.container1c{
+    background-color: #cdcd1c;
+    text-align: center;
+    line-height: 39px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border: solid 4px green;
+    font-style: italic;
+}
+#fix{
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+    height: 6vh;
+    width: 26%;
+    font-style: italic;
+    color: #b52121;
+    border: solid #d03030 8px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 90px;
+    left:500px;
+}
