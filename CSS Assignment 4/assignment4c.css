@@ -1,0 +1,157 @@
+.heading{
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+    background-image: linear-gradient(
+        to right,
+        red,
+        green 20% 40%,
+        yellow 
+    );
+    text-align: center;
+}
+.ul-div{
+    display: flex;
+    justify-content: center;
+}
+.ul-list{
+    background-color: #78c9c9;
+    height: 8vh;
+    width: 35vw;
+    border: solid 6px red;
+    border-radius:20px ;
+    padding-left: 35vw;
+    padding-top: 1vh;    
+}
+.container2{
+    background-color: #4fd1ac;
+    height: 20vh;
+    width: 99.8%;
+    border: solid 2px brown;
+    border-radius:20px ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #4defef;
+    height: 40%;
+    width: 25vw;
+    border: solid 3px green;
+    border-radius: 6px;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+.bottom{
+    position: relative;
+    /* left: 560px;
+    top: -75px; */
+}
+.heading2{
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 14px;
+    text-decoration: underline;
+    background-image: linear-gradient(
+        to right,
+        red,
+        yellow,
+        red
+    );
+    text-align: center;
+}
+.container3{
+    background-image: radial-gradient(
+        blue 20%,
+        #35c9c9 70%,
+        #1fc11f 99%
+    );
+   height: 24vh; 
+   width: 99.6%;
+   border: solid 3px green;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 10vh;
+}
+.card1{
+    background-color: yellow;
+    height:14vh;
+    width: 15%;
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+    font-weight: bold;
+    border: solid 2px brown;
+    border-radius: 10px;
+    line-height: 30px;
+}
+.heading3{
+    background-color: red;
+    color: white;
+    padding: 0px 15px 15px 15px;
+    font-size:large ;
+    font-weight: bold;
+    text-align: center;
+}
+.container4{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    color: white;
+    font-weight: bold;
+    gap: 15px;
+    grid-template-rows:40px 60px 170px 30px;
+    grid-template-columns:30% 30% 30% 10% ;
+    flex-wrap: column wrap;
+    width: 97%;
+}
+.zero{
+    grid-row-start:1 ;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:5;
+    background-color: red;
+    text-align: center;
+    font-size: x-large;
+}
+.one{
+    background-color: #2ae046;
+    text-align: center;
+    font-size: x-large;
+}
+.two{
+    background-color: dodgerblue;
+    font-size: x-large;
+}
+.three{
+    background-color: rgb(97, 70, 179);
+    font-size: large;
+}
+.four{
+    grid-row-start:2 ;
+    grid-row-end:4;
+    grid-column-start:4;
+    grid-column-end:5;
+    background-color: black;
+    text-decoration: underline;
+    flex-flow: column wrap;
+    font-size:large;
+}
+.five{
+    grid-row-start:3 ;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color: orange;
+    font-size: x-large;
+}
+.six{
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-column-start:1;
+    grid-column-end:5;
+    background-color: rgb(0, 217, 255);
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
