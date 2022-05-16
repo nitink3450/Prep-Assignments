@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+}
+.back-img{
+    background-image: url(./back\ sahara.jpeg);
+    background-size:100vw 100vh;
+}
+.logo{
+    position: absolute;
+    left: 8vw;
+    top: 4vw;
+    height: 7vh;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10vw;
+    text-decoration: none;
+}
+.navpad{
+    padding:2vw 2vw;
+    text-decoration: none;
+    color: white;
+}
+.material-icons{
+    border-radius:50px;
+    padding: 8px;
+    background-color:#a5836d;
+    color: white;
+}
+.container1{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.sahara{
+    margin: 0px 10px 10px 120px;
+}
+.heading{
+    font-size:90px;
+    font-weight: bold;
+    color:white;
+}
+.explore{
+    height: 5vh;
+    width: 12vw;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border: none;
+}
+.cards{
+    color: white;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-right: 120px;
+}
+.card{
+    height: 38vh;
+    width: 15vw;
+    border-radius: 20px;
+    padding:5px 20px;
+    margin: 20px 30px;
+    line-height:30px ;
+    font-size: small;
+    cursor: pointer;
+}
+.one{
+    background-image: url(./img1.jpeg);
+    background-size: 100%;
+}
+.two{
+    background-image: url(./img2.jpeg);
+    background-size: 100%;
+}
+.three{
+    background-image: url(./img3.jpeg);
+    background-size: 100%;
+}
+.four{
+    background-image: url(./img4.jpeg);
+    background-size: 100%;
+}
+.card:hover{
+    margin-top: 0px;
+    transition: 0.4s all 0s;
+}
+@media (max-width:856px){
+    .container1{
+        /* width: 100%; */
+        display: block;
+    }
+    .cards{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    .card{
+        width: 75vw;
+        height:35vh ;
+        background-size:100% 200%;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .sahara{
+        margin: 40px 20px 10px 20px;
+        padding: 20px;
+    }
+}
+@media(max-width:540px){
+    .explore
+    {
+        font-size:10px;
+        height: 5vh;
+        width: 22vw;
+    }
+    .logo{
+        top: 8vw;
+        left: 12vw;
+    }
+    .nav{
+        margin-top: 2vw;
+    }
+    .navpad{
+        position:absolute;
+    }
+    .moto1{
+        /* left: 0vw; */
+        right: 6vw;
+        top: 10vw;
+    }
+    .moto2{
+        /* left:0vw; */
+        top: 15vw;
+        right: 6vw;
+    }
+    .moto3{
+        top: 20vw;
+        right: 6vw;
+        /* left:0vw; */
+    }
+    
+}
