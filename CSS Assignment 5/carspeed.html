@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .sky {
+      height: 100vh;
+      width: 100%;
+      background-image: url(./background.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highway {
+      height: 200px;
+      width: 1000%;
+      display: block;
+      background-image: url(./road.jpg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-repeat: repeat;
+      animation: highway 5s linear infinite;
+    }
+
+    @keyframes highway {
+      100% {
+        transform: translateX(-3000px);
+      }
+    }
+
+    .city {
+      height: 250px;
+      width: 500%;
+      background-image: url(./buildings.png);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 200px;
+      display: block;
+      z-index: 1;
+      background-repeat: repeat;
+      animation: city 20s linear infinite;
+    }
+
+    @keyframes city {
+      100% {
+        transform: translateX(-1500px);
+      }
+    }
+
+    .car {
+      width: 400px;
+      left: 50%;
+      bottom: 100px;
+      transform: translateX(-50%);
+      position: absolute;
+      z-index: 2;
+    }
+
+    .car img {
+      width: 100%;
+      animation: car 1s linear infinite;
+    }
+
+    @keyframes car {
+      0% {
+        transform: translateY(-4px);
+      }
+
+      50% {
+        transform: translateY(0px);
+      }
+
+      100% {
+        transform: translateY(-4px);
+      }
+    }
+
+    .wheel {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: 185px;
+      z-index: 2;
+    }
+
+    .wheel img {
+      width: 72px;
+      height: 72px;
+      animation: wheel 1s linear infinite;
+    }
+
+    @keyframes wheel {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .frontwheel {
+      position: absolute;
+      left: 80px;
+    }
+
+    .backwheel {
+      position: absolute;
+      left: -165px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sky">
+    <div class="city"></div>
+    <div class="highway"></div>
+    <div class="car">
+      <img src="./car.png" alt="" />
+    </div>
+    <div class="wheel">
+      <img src="./wheel.png" alt="" class="frontwheel" />
+
+      <img src="./wheel.png" alt="" class="backwheel" />
+    </div>
+  </div>
+</body>
+
+</html>

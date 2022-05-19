@@ -1,0 +1,102 @@
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+.cards{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    margin:30px;
+    padding: 10px;
+}
+.card1{
+    background-color: #3d7e6f;
+    animation:alternate-reverse nitin 3s infinite 1s;
+}
+@keyframes nitin {
+    from{
+         transform:skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+
+}
+.card2{
+    background-color: #acacac;
+    animation:alternate-reverse nitin1 2s infinite 0s;
+
+}
+@keyframes nitin1{
+    from{
+         transform:skewY(20deg);
+    }
+    to{
+        transform:skewY(-20deg);
+    }
+
+}
+.card3{
+    background-color: #3d7e6f;
+    animation:normal nitin2 3s infinite 0s;
+}
+@keyframes nitin2{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.card4{
+    background-color: #3d7e6f;
+    border: 3px solid #10765e;
+    animation:alternate nitin3 4s infinite 0s;
+}
+@keyframes nitin3{
+    from{
+        transform: rotateX(60deg);
+    }
+    to{
+        transform: rotateX(-60deg);
+    }
+}
+.card5{
+    background-color: brown;
+    border: 3px solid #752b2b;
+    animation:alternate nitin4 4s infinite 0s;
+}
+@keyframes nitin4{
+    from{
+        transform: rotateY(70deg);
+    }
+    to{
+         transform: rotateY(-70deg);
+    }   
+}
+.card6{
+    background-color:green;
+    border: 3px solid #1f712b;
+    animation: alternate nitin5 2s infinite 0s;
+}
+@keyframes nitin5{
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(-90deg);
+    }
+}
+.heading{
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
