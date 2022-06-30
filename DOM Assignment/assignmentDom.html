@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assignmentDom.css">
+</head>
+<body>
+     <!-- //Q.1 Write the code to access element which is having id as "text" -->
+    <h2 id="text">DOM Assignment Q.1</h2>
+
+    <!-- //Q.2 Write the code to access element which is having tag as "h1" -->
+    <h1>DOM Assignment Q.2</h1>
+
+    <!-- //Q.3 Write the code to access element which is having class as "box" -->
+    <div>
+        <span class="item">DOM Assignment Q.3</span>
+        <p class="item">DOM Assignment Q.3</p>
+        <b class="item">DOM Assignment Q.3</b>
+    </div>
+
+    <!-- //Q.5 Change the heading from ""Hello"" to ""Hello World"" using DOM functions -->
+
+    <h2 id="replace">DOM Assignment Q.5</h2>
+    <button id="btn1">Click to Change</button><br>
+    
+    <!-- /*Q.6 Create three cards on HTML page and arrange them using flex property in row or
+     horizontal direction and also create button at the bottom named "Change Flex direction".
+     When user clicks on this button, the cards arrangement should be changed to vertical 
+     direction.*/ -->
+<br><br>
+
+     <div id="container">
+        <div>DOM Assignment Q.6</div>
+        <div>DOM Assignment Q.6</div>
+        <div>DOM Assignment Q.6</div>        
+     </div><br> 
+     <button id="btn2">Change Flex-Direction</button>
+
+     <!-- /*Q.7 Add one style attribute and give text color as red and id attribute and give the
+     id value as ""heading"" in the above given h1 tag using DOM functions"*/ -->
+
+     <h1 id="world">DOM Assignment Q.7</h1>
+
+     <!-- /*Q.8 Create an HTML page having content as Hello world and a button named Replace Text.
+     When user will click on this button page content should be changed to "Welcome to Elevation academy"*/ -->
+
+     <h2 id="replace1">DOM Assignment Q.8</h2>
+     <button id="btn3">Replace The Text</button><br>
+
+     <!-- /*Q.9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should
+     keep updating every second*/ --> <br>
+
+    <div id="clock">
+        <span id="hh">00</span>:
+        <span id="mm">00</span>:
+        <span id="ss">00</span>
+    </div> 
+
+    <!-- //Q.10 Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected -->
+    <br><br>
+    <form name="form">
+    <select onchange="getadd()" name="picked">
+        <option>DOM Assignment Q.10</option>
+        <option  value="Year:-2020-2021">Year:-2020-2021</option>
+        <option  value="Year:-2021-2022">Year:-2021-2022</option>
+        <option  value="Year:-2022-2023">Year:-2022-2023</option>
+        <option  value="Year:-2023-2024">Year:-2023-2024</option>
+        <option  value="Year:-2024-2025">Year:-2024-2025</option>
+        <option  value="Year:-2026-2027">Year:-2026-2027</option>
+      </select>
+    </form>
+    <br>
+      <label id="selected"></label>
+      
+      <!-- /*Q.11 Create a form having name ,email, phone no. , birth year 
+      Add validations - phone no. should start with 91 , it should be 10 digits
+      email should be domain prepbytes.com
+      birth year should be > 958 */ -->
+
+
+
+
+
+
+
+
+    <script src="./assignmentDom.js"></script>
+</body>
+</html>
