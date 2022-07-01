@@ -94,5 +94,65 @@ function getadd()
       email should be domain prepbytes.com
       birth year should be > 95 */
 
+function foo(){
+ 
+     //creating form-
+     const form = document.createElement('form');
+     form.setAttribute('method','get');
+     form.setAttribute('action','submit');
+
+     //creating input elements
+     //for name-
+     const name =document.createElement('input');
+     name.setAttribute('name','fname');
+     name.setAttribute('type','text');
+     name.setAttribute('placeholder','Enter your full name');
+     // name.setAttribute('required')
+     
+
+     //for phone number-
+     const phone =document.createElement('input');
+     phone.setAttribute('name','number');
+     phone.setAttribute('type','number');
+     phone.setAttribute('placeholder','Enter your phone number');
+     phone.setAttribute('maxlength','14');
+     phone.setAttribute('pattern','[+91][789]{1}[0-9]{9}');
+     // name.setAttribute('required')
+
+     //for Email-
+     const email =document.createElement('input');
+     email.setAttribute('name','email');
+     email.setAttribute('type','email');
+     email.setAttribute('placeholder','Enter your email');
+     email.setAttribute('pattern','[a-zA-Z0-9\-\_\.]+@prepbyte.com');
+     // name.setAttribute('required')
+
+      //for DOB-
+      const birth =document.createElement('input');
+     birth.setAttribute('name','birth');
+     birth.setAttribute('type','date');
+     birth.setAttribute('placeholder','DD/MM/YYYY');
+     birth.setAttribute('min','1995-01-01');
+      // name.setAttribute('required')
+
+      //submit button-
+      const submit=document.createElement('button');
+      submit.setAttribute('type','submit')
+      submit.setAttribute('value','submit')
+      submit.innerText ='submit';
+
+      //add all child to form-
+      form.appendChild(name);
+      form.appendChild(phone);
+      form.appendChild(email);
+      form.appendChild(birth);
+      form.appendChild(submit);
+
+      //access div of id form-
+      const div = document.getElementById('form');
+      //add form to div-
+      div.appendChild(form);
+}
+foo();
 
 
