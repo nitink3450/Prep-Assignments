@@ -81,48 +81,48 @@ function numPrint(){
     // 5
     // 6
     // 7"
-    // let num =new Promise((fullfilled,reject)=>{
+    let num =new Promise((fullfilled,reject)=>{
      
-    //     setTimeout(()=>{
-    //         fullfilled(console.log("1"))
-    //     },1000)
+        setTimeout(()=>{
+            fullfilled(console.log("1"))
+        },1000)
        
-    // }).then( ()=> new Promise((fullfilled,reject)=>{
+    }).then( ()=> new Promise((fullfilled,reject)=>{
     
-    //    setTimeout(()=>{
-    //     fullfilled(console.log("2"))
-    //    },2000)
+       setTimeout(()=>{
+        fullfilled(console.log("2"))
+       },2000)
     
-    // }) ).then( ()=> new Promise((fullfilled,reject)=>{
+    }) ).then( ()=> new Promise((fullfilled,reject)=>{
     
-    //    setTimeout(()=>{
-    //     fullfilled(console.log("3"))
-    //    },3000)
+       setTimeout(()=>{
+        fullfilled(console.log("3"))
+       },3000)
     
-    // }) ).then(()=> new Promise((fullfilled,reject)=>{
+    }) ).then(()=> new Promise((fullfilled,reject)=>{
        
-    //     setTimeout(()=>{
-    //         fullfilled(console.log("4"))
-    //     },4000)
+        setTimeout(()=>{
+            fullfilled(console.log("4"))
+        },4000)
     
-    // })).then(()=> new Promise((fullfilled,reject)=>{
+    })).then(()=> new Promise((fullfilled,reject)=>{
        
-    //     setTimeout(()=>{
-    //         fullfilled(console.log("5"))
-    //     },5000)
-    // })).then( ()=> new Promise((fullfilled,rej)=>{
+        setTimeout(()=>{
+            fullfilled(console.log("5"))
+        },5000)
+    })).then( ()=> new Promise((fullfilled,rej)=>{
        
-    //     setTimeout(()=>{
-    //        fullfilled(console.log("6"))
-    //     },6000)
+        setTimeout(()=>{
+           fullfilled(console.log("6"))
+        },6000)
     
-    // })).then(()=> new Promise((fullfilled,rej)=>{
+    })).then(()=> new Promise((fullfilled,rej)=>{
         
-    //     setTimeout(()=>{
-    //         fullfilled(console.log("7"))
-    //         console.log("end of promises");
-    //     },7000)
-    // }));
+        setTimeout(()=>{
+            fullfilled(console.log("7"))
+            console.log("end of promises");
+        },7000)
+    }));
 
 //Q.4. Create a promise function accepting a argument, if yes is passed to the function then it should go to 
 //  state and print Promise Resolved, and if nothing is passed then it should go to reject state and catch
@@ -173,38 +173,70 @@ third();
 
 //Q.6. Create examples to explain callback hell function
 
-function numPrint(){
-    setTimeout(() =>{
-        console.log('1');
+var init = function () {
+    var data1, data2, data3, data4, data5, data6, data7, data8, data9, data10;
 
-        setTimeout(() =>{
-            console.log('2');   
-            
-            setTimeout(() =>{
-                console.log('3');
+    console.log('Start by waiting for a second...');
 
-                setTimeout(() =>{
-                    console.log('4');
+    window.setTimeout(function() {
+        console.log('Then send a GET request to a couple of websites');
 
-                    setTimeout(() =>{
-                        console.log('5');
+        $.get('https://cors-test.appspot.com/test', function (data) {
+            data1 = data;
 
-                        setTimeout(() =>{
-                            console.log('6');
+            $.get('https://cors-test.appspot.com/test', function (data) {
+                data2 = data;
 
-                            setTimeout(() =>{
-                                console.log('7');
+                $.get('https://cors-test.appspot.com/test', function (data) {
+                    data3 = data;
 
-                                console.log('End of nested call back hell function')
+                    $.get('https://cors-test.appspot.com/test', function (data) {
+                        data4 = data;
 
-                            },7000)
-                        },6000)
-                    },5000)
-                },4000)
-            },3000)
-        },2000)
-    },1000)
-}
+                        $.get('https://cors-test.appspot.com/test', function (data) {
+                            data5 = data;
+
+                            $.get('https://cors-test.appspot.com/test', function (data) {
+                                data6 = data;
+
+                                $.get('https://cors-test.appspot.com/test', function (data) {
+                                    data7 = data;
+
+                                    $.get('https://cors-test.appspot.com/test', function (data) {
+                                        data8 = data;
+
+                                        $.get('https://cors-test.appspot.com/test', function (data) {
+                                            data9 = data;
+
+                                            $.get('https://cors-test.appspot.com/test', function (data) {
+                                                data10 = data;
+
+                                                console.log(data1);
+                                                console.log(data2);
+                                                console.log(data3);
+                                                console.log(data4);
+                                                console.log(data5);
+                                                console.log(data6);
+                                                console.log(data7);
+                                                console.log(data8);
+                                                console.log(data9);
+                                                console.log(data10);
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+
+        });
+
+    }, 1000);
+};
+
+init();
 
 //Q.7. Create examples to explain promises function
 
