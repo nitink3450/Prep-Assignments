@@ -26,7 +26,36 @@ function soo(c,d){
     // 6
     // 7"
 
-function numPrint(){
+    const array=[];
+for (let i=1;i<8;i++){
+    const promise= new Promise(function (res,rej){
+      setTimeout(()=>{
+        res(i)
+    },1000*i);    
+ })
+array.push(promise);  
+}
+for (let i=0;i<array.length;i++){
+array[i].then(data=>{
+  console.log(data);
+}) 
+}
+
+
+// numPrint();
+
+// Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming 
+                // a pyramid structure. Every callback depends/waits for the previous callback, thereby making 
+                // a pyramid structure that affects the readability and maintainability of the code.
+ 
+ //numPrint() is made up of set of callback functions which r called after some seconds/after previous one is executed.
+ // but here the code structure is completely messy to see and hard to find the error while debugging. 
+ //thats why it is called as callback hell.
+ //and also hard to find where we r exactly in those callback functions.
+ //this is worst/bad  codestructure of Callback fuctions.
+
+ //e.g.
+ function numPrint(){
     setTimeout(() =>{
         console.log('1');
 
@@ -58,18 +87,6 @@ function numPrint(){
         },2000)
     },1000)
 }
-// numPrint();
-
-// Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming 
-                // a pyramid structure. Every callback depends/waits for the previous callback, thereby making 
-                // a pyramid structure that affects the readability and maintainability of the code.
- 
- //numPrint() is made up of set of callback functions which r called after some seconds/after previous one is executed.
- // but here the code structure is completely messy to see and hard to find the error while debugging. 
- //thats why it is called as callback hell.
- //and also hard to find where we r exactly in those callback functions.
- //this is worst/bad  codestructure of Callback fuctions.
-
 
 //Q.3 "Write promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec ,
 //  2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
