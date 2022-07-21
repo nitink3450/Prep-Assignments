@@ -13,4 +13,4 @@
           }
           
      };
-     Print_pattern();
+     Print_pattern(5);

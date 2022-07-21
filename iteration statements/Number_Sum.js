@@ -13,3 +13,6 @@
         console.log(sum);
       };
       Number_Sum(1234);
+
+
+ 

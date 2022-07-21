@@ -10,4 +10,4 @@ const Find_Digits = (N) =>
       }
       console.log(count);
 };
-Find_Digits(3450);
+Find_Digits(345011);
