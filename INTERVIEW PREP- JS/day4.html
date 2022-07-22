@@ -1,0 +1,112 @@
+<!--
+//////////---DAY-4--///////////////
+Q.27.What is a Temporal Dead Zone?
+-TDZ is the block of code where a variable remians inaccessible until the computer completely initializes it with a value.
+-let amd const doesnt get hoisted.if we try to access them before initialization ,we get reference error.this is known as TDZ.
+
+Q.28.What is the for-in loop in JavaScript? Give its syntax.
+-for-in loop iterates through the indexes of the array or the properties of an object.
+-example 1-
+    let arr=[1,2,3,4,5];
+    for(let i in arr){
+        console.log(i);
+    }
+-example2-
+    obj={
+        "name":"john",
+        "roll":23,
+        "class":"man"
+    }
+    for(let key in obj){
+        console.log(key);
+    }
+
+Q.29.Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript.
+-local scope-it means that a variable is accessed only inside a function.it has local scope.
+-example-
+    var greet="Good";
+    function time(){
+        var time1="morning";
+        console.log(greet+" "+time1);//good morning
+    }
+    time();
+     console.log(greet+" "+time1);//reference error:time1 is not defined
+
+-block scope-it means that a variable is accessed only inside a specific block where it is declared.
+-only let and const is block scoped.
+-example-
+    var greet="hello";
+    function print(){
+        var greet1="there";
+        console.log(greet+" "+greet1);//hello there
+        if(greet1==="there"){
+            let greet2="again";
+            console.log(greet+" "+greet1+" "+greet2);//hello there again
+        }
+        console.log(greet+" "+greet1+" "+greet2);//reference error
+    }
+    print();
+
+-functional scope-local variables that are declared inside a function is accessible from anywhere insde a function only.this is known as functional scope.
+
+-scope chain-when our code try to access a variable during function call,it first search the local variables.if the variable not found,then it seaches the parent function scope until it reaches the global scope.this chain is known as scope chain.
+
+Q.30.What is difference between null and undefined and where to use what?
+-undefined-when a variable is declared but not initialized.if we try to access this,we get undefined.
+-type of undefined is undefined itself.
+-null-it is a assignment value to the variable which represents the intentional absence of a value.
+-example-
+    var test;
+    console.log(test);//undefined
+    console.log(typeof(test));//undefined
+
+    var test1=null;
+    console.log(test1);//null
+    console.log(typeof(test1));//object
+
+Q.31.what is Symbol?
+-symbol is a primitive datatype newly introduced in ES6.it is used to give a unique value which is immutable means which can not be changed.
+-every symbol value is unique.
+-example-
+    let sym1=Symbol(10);
+    let sym2=Symbol(10);
+    console.log(sym1==sym2);//false
+
+Q.32.Write code to explain map and filter in arrays.
+-Both map and filter are specifically designed for arrays.
+-both take callback function as an argument.
+-map-we use map method when we want to perform some operation on each and every item of the array.it returns a new array.
+-example-
+    let arr1=[1,2,3,4,5];
+    let result=arr1.map(function(val){
+         return val*5;
+    })
+    console.log(result);
+
+-filter-filter method filters the array based on the condition that we apply.
+-example-
+    let arr2=[12,5,78,46,13,0,67];
+    let res=arr2.filter(function(val){
+        return val>20;
+    })
+    console.log(res);
+Q.33.Explain passed by value and passed by reference.
+-pass by value means that we pass the actual value of the variable into the function.
+-pass by reference means that instead of passing the value of the variable,we pass the address of variable(location) to the function.
+-example-
+    var a=2;
+    var b=a;
+    console.log(a);//2
+    console.log(b);//2
+    a=4;
+    console.log(a);//4
+    console.log(b);//2
+
+Q.34.Please explain Self Invoking Function and its code.
+-self invoking functions(IIFE) are kind of an anonymous function which gets invoked automatically after its declaration.we dont have to manually invoke it.
+-example-
+    (function(message){
+        console.log('message');
+    })('morning');
+
+     -->

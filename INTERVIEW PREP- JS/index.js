@@ -111,6 +111,7 @@ console.log(Person111.pic); // any
         Employee.call(this, name, age, gender, id);
         // Adding a new parameter
         this.specialization = specialization;
+        // console.log(this);//developer
     }
 
     // Creating objects
