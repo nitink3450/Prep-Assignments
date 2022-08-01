@@ -167,17 +167,18 @@
 // let firstone = document.getElementsByTagName('h1')[0];
 // firstone.style.color='red';
 
-let btn2=document.getElementById('btn2');
-btn2.addEventListener('click',()=>{
-    let hide =document.getElementsByTagName('h2')[0];
-    hide.style.display='none';
-})
+// let btn2=document.getElementById('btn2');
+// btn2.addEventListener('click',()=>{
+//     let hide =document.getElementsByTagName('h2')[0];
+//     hide.style.display='none';
+// })
 
-let btn3=document.getElementById('btn3');
-btn3.addEventListener('click',()=>{
-    let text=document.getElementsByTagName('h2')[1];
-    text.innerHTML = 'welcome';
-})
+// let btn3=document.getElementById('btn3');
+// btn3.addEventListener('click',()=>{
+//     let text=document.getElementsByTagName('h2')[1];
+//     text.innerHTML = 'welcome';
+// })
 
 
-document.write(Date());
+// document.write(Date());
+

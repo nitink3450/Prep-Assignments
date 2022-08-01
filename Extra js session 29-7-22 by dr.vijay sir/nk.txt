@@ -1,0 +1,6 @@
+
+// Monday--->Basic Terms in js
+// Tuesday -->Functions
+// Wednesday -->Asyncronous Topics (Promises,Callbackhell,async await ,call apply bind,Object )
+// Thurday -->Prototypes in js and Array and String Methods
+// Friday -->D.O.M
