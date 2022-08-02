@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXTRA CLASS DAY 1</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+            font-size: large;
+        }
+        b{
+           display: flex;
+           justify-content: center;
+        }
+    </style>
+</head>
+<body >
+<b style="font-size:xx-large;">☀DAY 1☀</b>
+<h1>Q.1.What is Javascript?</h1>
+-Javascript is a combination of both compiler and interpreter and it works on the concept of JIT (Just in time compilation).<br>
+-In this the whole code gets compiled in one single shot and then directly it goes for execution , no file gets generated.<br>
+-Javascript is a -
+    1.Synchronous lanaguage means the complete code will be executed line by line<br>
+    2.Single Threaded language means once the error occurs then the execution will stop at that line itself.<br>
+    3.Dynamic Programming Language means when you are creating a variable and assigning it some value then this value type can be changed throughout the whole code execution which is not applicable in other programming languages.<br>
+
+<h1>Q.2.what is the javascript run time environment?</h1>
+-A runtime environment is where your program will be executed.<br>
+-It determines what global objects your program can access and it can also impact how it runs.<br>
+-it has two JavaScript runtime environments:<br>
+    1.the runtime environment of a browser (like Chrome, or Firefox)<br>
+    2.the Node runtime environment<br>
+
+<h1>Q.3. what is execution context?</h1>
+-The browser's JavaScript engine then creates a special environment to handle the transformation
+ and execution of this JavaScript code. This environment is known as the Execution Context.<br>
+-The Execution Context contains the code that's currently running,
+ and everything that aids in its execution.<br>
+-During the Execution Context run-time, the specific code gets parsed by a parser,
+ the variables and functions are stored in memory, executable byte-code gets generated,
+ and the code gets executed.<br>
+-There are two kinds of Execution Context in JavaScript:<br>
+            1.Global Execution Context (GEC)<br>
+            2.Function Execution Context (FEC)<br>
+
+<h1>Q.4.what is javascript Engine?</h1>
+-JS engine is a program which gets used to execute the JS code.v
+-All the browsers have their own JS engine. But out of all the most famous one is V8 engine provided by Google chrome.<br>
+-Internet Explorer has Chakra Mozilla Firefox has Spider Monkey<br>
+-Every code that has to be executed firstly gets converted into machine level language which is a combination of 0 and 1.v
+-This code is understandable by machine and then it finally gets executed.<br>
+Now this complete process is known as compilation and it can be done by either compiler or interpreter.<br>
+-In case of compiler the complete code gets converted into machine level in a single shot and it creates a file which finally gets used in execution.<br>
+-whereas in case of interpreter the code gets converted into machine level line by line and it does not create any file.<br>
+
+<h1>Q.5.flow of data in engine?</h1>
+-there are 4 levels in engine to flow our data in browser:
+<ol type="1">
+    <li>PARSER </li>
+    <li>AST(Abstract Syntax Tree)</li>
+    <li>COMPILER</li>
+    <li>EXECUTION</li>
+</ol>
+<p>
+    -When we run our js code in browser(chrome) runtime environment means in js engine(v8 engine) <br>
+    -first it will pass through a parser,parser checks that if our code syntax,if any syntax error found it will throw an error to browser and returns our code back.<br>
+    -if syntax is good then it will tranfered/passed to AST(Abstract Syntax Tree).<br>
+    -AST it creates the tree structure like tokens of the source code of a computer program that conveys the structure of the source code. like variabledeclarations, identifires, literals etc. <br>
+    -then our code is passed to the Compiler,compiler converts our whole code into the macchine level language.<br>
+    -then it passed for the Execution process after execution output will display on the console or on webpage.<br>
+    -Execution context allows the JavaScript engine to manage the complexity of interpreting and running our code.
+</p>
+</body>
+</html>
